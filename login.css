@@ -15,7 +15,12 @@ html{
     height: 100vh;
     background-attachment: fixed;
 }
-
+.row{
+    max-width: 1140;
+    margin: 0 auto;
+    margin-left: 750px;
+    padding-top: 1px;
+}
 .BottomMap {
     padding-bottom: 30%;
     position: relative;
