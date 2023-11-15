@@ -10,7 +10,7 @@ html{
     text-rendering: optimizeLegibility;
 }
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("images/hero.jpg");
+    background-color: linear-gradient(to left, #0133b7, #FFFFFF);
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
@@ -18,20 +18,9 @@ html{
 .row{
     max-width: 1140;
     margin: 0 auto;
-    margin-left: 350px;
-    padding-top: 20px;
+    margin-left: 750px;
+    padding-top: 1px;
 }
-.herotxtbox{
-    width: 1140px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-weight: 100;
-    word-spacing: 4;
-    text-transform: uppercase;
-}
-
 .BottomMap {
     padding-bottom: 30%;
     position: relative;
