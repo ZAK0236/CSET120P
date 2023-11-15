@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white
+}
+html{
+    color: #f5f1f1;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+.header{
+    background-color: rgb(1, 51, 183);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.navigation{
+    text-align: right;
+}
+.footer{
+    width: 100%;
+    height: 193px;
+    background-color: rgb(28, 26, 26);
+    color: white;
+}
+.BottomNav{
+    background-color:1px solid rgb(28, 26, 26);
+    color: gray;
+    display: inline-block;
+    padding: 0px 30px;
+}
+.BottomNav:hover, .BottomNav:active{
+    color: #cf6d17;
+}
+.BottomNav-ghost{
+    color: #f7f4f1;
+    transition: color 0.1s;
+}
+.Words{
+    padding-top: 70px;
+    margin-left: 150px;
+}
+.Socials{
+    margin-left: 72%;
+    margin-top: -40px;
+}
