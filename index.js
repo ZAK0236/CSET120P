@@ -1,6 +1,3 @@
-function refreshPage(){
-    window.location.reload();
-} 
 function signup(){
     let email = document.getElementById("email").value
     let pass = document.getElementById("pass").value
