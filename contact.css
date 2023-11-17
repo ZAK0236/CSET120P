@@ -91,3 +91,34 @@ hr{
     margin: auto;
     margin-bottom: 30px;
 }
+
+footer {
+    background-color: #9fcbd6;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+
+}
+
+.social-media {
+    padding: 0px 20px;
+}
+
+.social-logo{
+    margin: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.social-logo :last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    text-align: right;
+    font-size: small;
+    font-size: medium;
+}
