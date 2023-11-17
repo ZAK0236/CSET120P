@@ -65,7 +65,7 @@ html{
 		#bottom { bottom: 0; }
 
 hr{
-    width: 100px;
+    width: 150px;
     height: 3px;
     background-color: #9fcbd6;
     margin: auto;
@@ -157,3 +157,8 @@ footer {
     font-size: small;
     font-size: medium;
 }
+
+.about {
+color: black;
+}
+.about h1 {color: #0133b7;}
