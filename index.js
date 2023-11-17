@@ -1,7 +1,3 @@
-function refreshPage(){
-    window.location.reload();
-} 
-
 let manageremail = "manager"
 let managerpass = "managerpass"
 
@@ -23,7 +19,6 @@ function login(){
             alert("wrong password")
 
         }
-
     }
     if(localStorage.getItem(email)){
         if(pass === localStorage.getItem(email)){
