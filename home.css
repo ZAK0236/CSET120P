@@ -74,12 +74,13 @@ hr{
 
 .the-food {
     position: relative;
-    height: 550px;
-    background-image: url("IMG/diner-food.jpg");
+    height: 650px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("IMG/pexels-photo-6529924.jpeg");
     background-size: cover;
     background-position: 75%;
     margin: 0px 15px 0px 15px;
     text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .text-overlay   {
@@ -97,7 +98,7 @@ hr{
     position: absolute;
     top: 35%;
     left: 10%;
-    background-color: rgb(0, 0, 0);
+    background-color: #0133b7;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     font-size: medium;
@@ -107,7 +108,7 @@ hr{
     position: absolute;
     top: 45%;
     left: 10%;
-    background-color: rgb(0, 0, 0);
+    background-color:  #0133b7;
     color: rgb(255, 255, 255);
     padding: 10px 40px;
     font-size: medium;
