@@ -79,6 +79,7 @@ hr{
     background-size: cover;
     background-position: 75%;
     margin: 0px 15px 0px 15px;
+    text-transform: uppercase;
 }
 
 .text-overlay   {
