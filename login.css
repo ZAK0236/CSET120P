@@ -1,6 +1,4 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 html{
@@ -10,8 +8,16 @@ html{
     text-rendering: optimizeLegibility;
 }
 .header{
-    background-color: linear-gradient(to left, #0133b7, #FFFFFF);
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url("IMG/pexels-photo-2732663.jpeg");
     background-size: cover;
-    height: 100vh;
-    background-attachment: fixed;
+    height: 110vh;
+    background-attachment: absolute;
+}
+.row{
+    text-align: center;
+}
+.MPT{
+    color: white;
+    text-align: center;
+    
 }
