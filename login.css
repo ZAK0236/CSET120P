@@ -14,4 +14,7 @@ html{
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+.logo{
+    align-self: center;
+    width: 100%;
 }
