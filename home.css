@@ -74,17 +74,13 @@ hr{
 
 .the-food {
     position: relative;
-    width: 100% ;
     height: 550px;
-    margin: 0 auto;
+    background-image: url("IMG/diner-food.jpg");
+    background-size: cover;
+    background-position: 75%;
+    margin: 0px 15px 0px 15px;
 }
-.the-food img{
-    width: 100%;
-    display: block;
-    height: 550px;
-    padding: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-}
+
 .text-overlay   {
     position: absolute;
     top: 15%;
