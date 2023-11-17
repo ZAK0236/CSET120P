@@ -116,10 +116,42 @@ hr{
     position: relative;
 }
 .BottomMap iframe {
-    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     height: 100%;
     width: 100%;
     left: 0;
     top: 0;
     position: absolute;
+}
+
+footer {
+    background-color: #9fcbd6;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+
+}
+
+.social-media {
+    padding: 0px 20px;
+}
+
+.social-logo{
+    margin: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.social-logo :last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    text-align: right;
+    font-size: small;
+    font-size: medium;
 }
