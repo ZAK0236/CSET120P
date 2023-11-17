@@ -4,21 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Page</title>
+    <link rel="stylesheet" href="menu.css">
 </head>
 <body>
-<header class="header">
+<div class="container">
+    <div class="header">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
+    <img src="IMG/lucys_logo.png" alt="Lucy's" class="logo">
     <nav class="navbar">
-        <div class="row">
-            <img src="IMG/lucys_logo.png" alt="Lucy's" class="logo" height="100px" width="auto">
-        </div>
-        <ul class = "navigation">
-            <a style="text-decoration:none;" href="#" class="btn-nav">Home</a>
-            <a style="text-decoration:none;" href="#" class="btn-nav">Menu</a>
-            <a style="text-decoration:none;" href="#" class="btn-nav">Contact</a>
-        </ul>
+        <a href="home.html" class="active">HOME</a>
+        <a href="menu.html">MENU</a>
+        <a href="contact.html">CONTACT</a>
     </nav>
-</header>
-
+    <br><br>
+    <hr>
+</div>
+<footer>
+    <div class="copyright">
+        &copy; 2023 by Lucy's. All Rights Reserved.
+    </div>
+    
+    <div class="social-media">
+        <font size="+3" font color=""><ion-icon name="logo-twitter" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-instagram" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-facebook" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-pinterest" class="social-logo"></ion-icon></font>
+    </div>
+</footer>
 <script src="index.js"></script>
 </body>
 </html>
