@@ -26,11 +26,13 @@ h1{
     margin: 25px auto;
     padding: 20px;
     color: black;
+    text-transform: uppercase;
 }
 .contact-title{
     border-bottom: 2px solid rgb(81, 0, 209);
     width: fit-content;
     color: black;
+    text-transform: uppercase;
 }
 
 .logo {
