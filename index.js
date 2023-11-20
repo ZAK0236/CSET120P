@@ -13,14 +13,15 @@ function login(){
     let pass = document.getElementById("pass").value
 
     if(email == manageremail){
+        console.log("test")
         if(pass == managerpass){
+            console.log("test")
             location.replace("Manmenu.html")
         }else{
             alert("wrong password")
 
         }
-    }
-    if(localStorage.getItem(email)){
+    }else if(localStorage.getItem(email)){
         if(pass === localStorage.getItem(email)){
             location.replace("menu.html")
         }
@@ -31,4 +32,16 @@ function login(){
     else {
         alert("User not found")
     }
+}
+
+//menu code
+
+//manager menu code
+
+function addMenuItem(event){
+
+}
+
+function removeMenuItem(event){
+
 }
