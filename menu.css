@@ -102,3 +102,50 @@ footer {
     font-size: small;
     font-size: medium;
 }
+h1{
+    color: #0133b7;
+}
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 200px;
+    width: 200px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #0133b7;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.btn-primary:hover {
+    background-color: #9fcbd6;
+}
