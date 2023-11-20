@@ -1,5 +1,5 @@
 let manageremail = "manager"
-let managerpass = "managerpass"
+let managerpass = "manager"
 
 function signup(){
     let email = document.getElementById("email").value
@@ -16,19 +16,17 @@ function login(){
         if(pass == managerpass){
             location.replace("Manmenu.html")
         }else{
-            alert("wrong password")
-
+            alert("Wrong Password")
         }
     }
     if(localStorage.getItem(email)){
         if(pass === localStorage.getItem(email)){
-            location.replace("menu.html")
+            location.replace("Manmenu.html")
         }
         else{
             alert("wrong password")
         }
-    }
-    else {
+    }else {
         alert("User not found")
     }
 }
