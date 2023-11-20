@@ -1,5 +1,5 @@
 let manageremail = "manager"
-let managerpass = "managerpass"
+let managerpass = "manager"
 
 function signup(){
     let email = document.getElementById("email").value
@@ -23,7 +23,7 @@ function login(){
         }
     }else if(localStorage.getItem(email)){
         if(pass === localStorage.getItem(email)){
-            location.replace("menu.html")
+            location.replace("home.html")
         }
         else{
             alert("wrong password")
@@ -43,5 +43,5 @@ function addMenuItem(event){
 }
 
 function removeMenuItem(event){
-
+  
 }
