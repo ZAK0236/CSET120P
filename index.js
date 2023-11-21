@@ -70,7 +70,7 @@ function ready() {
     var removeCartItemButtons = document.getElementsByClassName("btn-danger")
     for(var i=0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
-        button.addEventListener("click", removeCartItem)
+        button.addEventListener('click', removeCartItem)
     }
 
     var quantityInputs = document.getElementsByClassName("cart-quantity-input")
@@ -81,10 +81,10 @@ function ready() {
 
     var addToCartButtons = document.getElementsByClassName("shop-item-button")
     for(var i=0; i < addToCartButtons.length; i++) {
-        var input = addToCartButtons[i]
-        input.addEventListener('change', addToCartClicked)
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
     }
-    document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 //Function to remove an item from your cart by clicking on the red "remove" button
@@ -114,7 +114,7 @@ function addToCartClicked(event){
     updateCartTotal()
 }
 
-//This function will actually create the row that th eprice title and image sit in.
+//This function will actually create the row that the price title and image sit in.
 function addItemToCart(title, price, imageSrc){
     var cartRow = document.createElement('div')
     cartRow.classList.add("cart-row")
@@ -156,7 +156,7 @@ function updateCartTotal() {
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName("cart-total-price")[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
 //For this function after you click "Purchase" it will take you to another page with your receipt and a "thank you" message
