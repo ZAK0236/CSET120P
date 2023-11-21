@@ -144,7 +144,7 @@ function addToCartClicked(event){
     updateCartTotal()
 }
 
-//This function will actually create the row that th eprice title and image sit in.
+//This function will actually create the row that the price title and image sit in.
 function addItemToCart(title, price, imageSrc){
     var cartRow = document.createElement('div')
     cartRow.classList.add("cart-row")
