@@ -1,0 +1,110 @@
+{
+    "breakfast": [
+        {
+            "name": "Bacon",
+            "price": "$2.99",
+            "img": "IMG/bacon.jpg"
+        },
+        {
+            "name": "Pancakes",
+            "price": "$3.99",
+            "img": "IMG/pancakes.jpg"
+        },
+        {
+            "name": "French Toast",
+            "price": "$3.99",
+            "img": "IMG/frenchtoast.jpg"
+        },
+        {
+            "name": "Eggs",
+            "price": "$2.99",
+            "img": "IMG/eggs.jpg"
+        },
+        {
+            "name": "Home Fries",
+            "price": "$1.99",
+            "img": "IMG/homefries.jpg"
+        }
+    ],
+    "lunch": [
+        {
+            "name": "Burger",
+            "price": "$3.99",
+            "img": "IMG/burger.jpg"
+        },
+        {
+            "name": "Chicken Wrap",
+            "price": "$3.99",
+            "img": "IMG/chickenwrap.jpg"
+        },
+        {
+            "name": "Fries",
+            "price": "$2.99",
+            "img": "IMG/fries.jpg"
+        },
+        {
+            "name": "Italian Sub",
+            "price": "$4.99",
+            "img": "IMG/italiansub.jpg"
+        },
+        {
+            "name": "Cheese Steak",
+            "price": "$4.99",
+            "img": "IMG/cheesesteak.jpg"
+        }
+    ],
+    "Dinner": [
+        {
+            "name": "Lasagna",
+            "price": "$4.99",
+            "img": "IMG/lasagna.jpg"
+        },
+        {
+            "name": "Steak",
+            "price": "$4.99",
+            "img": "IMG/steak.jpg"
+        },
+        {
+            "name": "Fettucine Alfredo",
+            "price": "$5.99",
+            "img": "IMG/fettucinealfredo.jpg"
+        },
+        {
+            "name": "Chicken Parm",
+            "price": "$8.99",
+            "img": "IMG/chickenparm.jpg"
+        },
+        {
+            "name": "Salad",
+            "price": "$3.99",
+            "img": "IMG/salad.jpg"
+        }
+    ],
+    "Drinks": [
+        {
+            "name": "Milk",
+            "price": "$1.99",
+            "img": "IMG/milk.jpg"
+        },
+        {
+            "name": "Coke",
+            "price": "$1.99",
+            "img": "IMG/coke.jpg"
+        },
+        {
+            "name": "Coffee",
+            "price": "$2.99",
+            "img": "IMG/coffee.jpg"
+        },
+        {
+            "name": "Orange juice",
+            "price": "$1.99",
+            "img": "IMG/orangejuice.jpg"
+        },
+        {
+            "name": "Water",
+            "price": "$0.99",
+            "img": "IMG/water.jpg"
+        }
+    ]
+}
