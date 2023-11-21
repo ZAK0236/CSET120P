@@ -92,6 +92,44 @@ hr{
     margin-bottom: 30px;
 }
 
+
+Input{
+    border-radius: 5px;
+    border: 1px solid rgb(142, 138, 138);
+    padding: 10px;
+}
+.Number{
+    margin-left: 10px;
+    margin-top: 0px;
+    height: 10px;
+    position: absolute;
+}
+.Email{
+    margin-left: 10px;
+    margin-top: 1px;
+    height: 10px;
+    position: absolute; 
+}
+.Mail{
+    margin-left: 10px;
+    margin-top: 2px;
+    height: 10px;
+    position: absolute;
+}
+.Send{
+    background-color: #0133b7;
+    color: white;
+    padding-top: 5px;
+    padding-left: 37px;
+    min-height: 30px;
+    min-width: 120px;
+    margin-top: 10px;
+    margin-left: 830px;
+    width: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+
 footer {
     background-color: #9fcbd6;
     color: rgb(255, 255, 255);
@@ -100,7 +138,6 @@ footer {
     align-items: center;
     padding: 40px 20px;
     width: 100%;
-
 }
 
 .social-media {
