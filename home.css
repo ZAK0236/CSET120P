@@ -72,6 +72,10 @@ hr{
     margin-bottom: 30px;
 }
 
+.time{
+    color: #0133b7;
+}
+
 .the-food {
     position: relative;
     height: 650px;
