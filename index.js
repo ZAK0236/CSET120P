@@ -67,24 +67,24 @@ if(document.readyState == "loading"){
 }
 
 function ready() {
-    var removeCartItemButtons = document.getElementsByClassName("btn-danger")
+    var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for(var i=0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
-        button.addEventListener("click", removeCartItem)
+        button.addEventListener('click', removeCartItem)
     }
 
-    var quantityInputs = document.getElementsByClassName("cart-quantity-input")
+    var quantityInputs = document.getElementsByClassName('cart-quantity-input')
     for(var i=0; i < quantityInputs.length; i++) {
         var input = quantityInputs[i]
         input.addEventListener('change', quantityChanged)
     }
 
-    var addToCartButtons = document.getElementsByClassName("shop-item-button")
+    var addToCartButtons = document.getElementsByClassName('shop-item-button')
     for(var i=0; i < addToCartButtons.length; i++) {
-        var input = addToCartButtons[i]
-        input.addEventListener('change', addToCartClicked)
+        var button = addToCartButtons[i]
+        button.addEventListener('click', addToCartClicked)
     }
-    document.getElementsByClassName("btn-purchase")[0].addEventListener("click", purchaseClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 //Function to remove an item from your cart by clicking on the red "remove" button
@@ -144,19 +144,19 @@ function addItemToCart(title, price, imageSrc){
 
 //This function will update the cart total after other functions are ran
 function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName("cart-items")[0]
-    var cartRows = cartItemContainer.getElementsByClassName("cart-row")
+    var cartItemContainer = document.getElementsByClassName('cart-items')[0]
+    var cartRows = cartItemContainer.getElementsByClassName('cart-row')
     var total = 0
     for(var i=0; i < cartRows.length; i++){
         var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName("cart-price")[0]
-        var quantityElement = cartRow.getElementsByClassName("cart-quantity-input")[0]
+        var priceElement = cartRow.getElementsByClassName('cart-price')[0]
+        var quantityElement = cartRow.getElementsByClassName('cart-quantity-input')[0]
         var price = parseFloat(priceElement.innerText.replace('$', ''))
         var quantity = quantityElement.value
         total = total + (price * quantity)
     }
     total = Math.round(total * 100) / 100
-    document.getElementsByClassName("cart-total-price")[0].innerText = '$' + total
+    document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
 
 //For this function after you click "Purchase" it will take you to another page with your receipt and a "thank you" message
