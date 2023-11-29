@@ -20,7 +20,6 @@
         <a href="contact.html" class="active">CONTACT</a>
     </nav>
     <br><br>
-    <hr>
     </div>
     <h1>CONTACT US</h1>
     <div class="contact-section">
@@ -33,16 +32,16 @@
         <div class="contact-info">
             <div class="Input">
                 <h2 class="contact-title">contact info</h2>
-                <p><strong>Phone: <input class="Number" type="text" placeholder="Phone Number" name="Name" size="40"></strong></p>
-                <p><strong>Email: <input class="Email" type="text" placeholder="Email" name="Name" size="40"></strong></p>
+                <p><strong>Phone: <input class="Number" type="text" value="" id="myInput" placeholder="Phone Number" name="Name" size="40"></strong></p>
+                <p><strong>Email: <input class="Email" type="text" value="" id="myInput" placeholder="Email" name="Name" size="40"></strong></p>
                 <p><strong>Mailing Address: <input class="Mail" type="text" placeholder="Mailing Address" name="Name" size="40"></strong></p>
             </div>
         </div>
     </div>
 <div class="SBTN">
-    <!-- <a style="text-decoration:none;" href='#'><div onclick = "sendClicked()" class="Send">Send</div></a> -->
-    <!-- <button onclick = "sendClicked()" class="button"><font size="+1" font color="">Send</font></button> -->
-</div>
+    <!-- <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button> -->
+    <button class="SB" onclick="document.getElementById('myInput').value = ''"><font size="+1" font color="">Send</font></button>
+    <!-- <a style="text-decoration:none;" href='#'></a> -->
 </div>
 <footer>
     <div class="copyright">

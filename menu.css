@@ -73,8 +73,11 @@ hr{
 }
 
 h1{
-    color: #0133b7;
+    color: black;
     text-align: center;
+    border-bottom: 2px solid rgb(81, 0, 209);
+    width: fit-content;
+    margin: auto;
 }
 
 .shop-item-title {
