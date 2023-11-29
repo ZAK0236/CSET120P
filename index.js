@@ -114,8 +114,7 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-    // .addEventListener('click', sendClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked) 
 }
 
 //Function to remove an item from your cart by clicking on the red "remove" button
@@ -199,11 +198,3 @@ function purchaseClicked(){
     }
     updateCartTotal()
 }
-
-// function sendClicked(){
-
-//     var button = document.getElementsByClassName(button)[0]
-//     while(button.hasChildNodes()) {
-//         button.removeChild(button.firstChild)
-//     }
-// }
