@@ -19,6 +19,34 @@ html{
     margin: 0 auto;
 }
 
+
+.navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #0133b7;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.navbar a:hover {color: rgb(38, 154, 221);}
+
+.navbar a.active {
+    text-decoration: none;
+    color: rgb(38, 154, 221);
+    padding: 5px 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
 #top, #bottom, #left, #right {
 	background: #9fcbd6;
 	position: fixed;
