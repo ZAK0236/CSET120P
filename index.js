@@ -85,11 +85,10 @@ function addMenuItem(event){
 }
 
 function removeMenuItem(event){
-  
+
 }
 
 //The following functions are for users to add and remove items from cart
-
 if(document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready)
 } else {
