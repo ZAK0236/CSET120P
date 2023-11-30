@@ -198,3 +198,17 @@ function purchaseClicked(){
     updateCartTotal()
 }
 
+//Toggles display of Credit Crad Info
+
+const cardBtn = document.querySelector('#card-btn')
+const cashBtn = document.querySelector('#cash-btn')
+const div = document.querySelector('.credit-card')
+
+cardBtn.addEventListener('click', () => {
+    div.style.display = 'block'
+})
+
+cashBtn.addEventListener('click', () => {
+    div.style.display = 'none'
+})
+
