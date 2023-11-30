@@ -78,3 +78,85 @@ footer {
 .info {
     font-size: large;
 }
+
+.credit-card {
+    width: 360px;
+    height: 400px;
+    margin: 60px auto 0;
+    border: 1px solid #9fcbd6;
+    border-radius: 6px;
+    background-color: #9fcbd6;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    margin-bottom: 40px;
+}
+
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+
+.title{
+    font-size: 18px;
+    margin: 0;
+    color: #000000;
+}
+
+.card-number, .cvv-input input, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number, .cvv-details, .cvv-input input, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.month, .year {
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.month{float: left;} .year{float: right;}
+
+.cvv-input input {
+    float: left;
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.cvv-details{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+.cvv-details p {margin-top: 6px;}
