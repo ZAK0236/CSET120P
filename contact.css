@@ -32,11 +32,7 @@ h1{
     width: fit-content;
     color: black;
     text-transform: uppercase;
-}
-.cttext{
-    margin-top: 10px;
-    font-size: medium; 
-    text-transform: none;
+    margin-bottom: 10px;
 }
 .logo {
     max-width: 270px;
@@ -102,24 +98,22 @@ Input{
     border: 1px solid rgb(142, 138, 138);
     padding: 10px;
 }
-.Number{
-    margin-left: 0px;
-    margin-top: 10px;
-    height: 10px;
-    margin-bottom: 20px;
+.Name{
+    margin-left: 5px;
+    margin-top: 2px;
+    height: 20px;
     position: absolute;
 }
-.Email{
-    margin-left: 0px;
-    margin-top: 40px;
-    height: 10px;
-    position: absolute; 
-    margin-bottom: 20px;
+.Phone{
+    margin-left: 1px;
+    margin-top: 8px;
+    height: 30px;
+    margin-bottom: 10px;
 }
-.Mail{
-    margin-left: 0px;
-    margin-top: 70px;
-    height: 10px;
+.Email{
+    margin-left: 5px;
+    margin-top: -3px;
+    height: 60px;
     position: absolute;
 }
 .SBTN{
