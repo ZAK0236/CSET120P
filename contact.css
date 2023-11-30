@@ -25,6 +25,7 @@ h1{
     padding: 20px;
     color: black;
     text-transform: uppercase;
+    height: 210px;
 }
 .contact-title{
     border-bottom: 2px solid rgb(81, 0, 209);
@@ -32,7 +33,11 @@ h1{
     color: black;
     text-transform: uppercase;
 }
-
+.cttext{
+    margin-top: 10px;
+    font-size: medium; 
+    text-transform: none;
+}
 .logo {
     max-width: 270px;
     display: block;
@@ -98,20 +103,22 @@ Input{
     padding: 10px;
 }
 .Number{
-    margin-left: 10px;
-    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
     height: 10px;
+    margin-bottom: 20px;
     position: absolute;
 }
 .Email{
-    margin-left: 10px;
-    margin-top: 1px;
+    margin-left: 0px;
+    margin-top: 40px;
     height: 10px;
     position: absolute; 
+    margin-bottom: 20px;
 }
 .Mail{
-    margin-left: 10px;
-    margin-top: 2px;
+    margin-left: 0px;
+    margin-top: 70px;
     height: 10px;
     position: absolute;
 }
