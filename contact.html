@@ -26,21 +26,24 @@
         <div class="contact-info">
             <h2 class="contact-title">Diner contact info</h2>
             <p><strong>Phone: </strong>(717)123-4567</p>
-            <p><strong>Email: </strong>lucysdiner@mail.com</p>
+            <p><strong>Email: </strong>lucysdiner@email.com</p>
             <p><strong>Mailing Address: </strong>8910 Diner st.</p>
         </div>
         <div class="contact-info">
             <div class="Input">
                 <h2 class="contact-title">contact info</h2>
-                <p><strong>Name: <input class="Name" type="text" value="" id="myInput" placeholder="Full Name" name="Name" size="40"></strong></p>
-                <p><strong>Phone: <input class="Phone" type="text" value="" id="myInput" placeholder="Phone Number" name="Name" size="40"></strong></p>
-                <p><strong>Email: <input class="Email" type="text" placeholder="Email" name="Name" size="40"></strong></p>
+                <p><strong>Name: <input class="Name" type="text" value="" id="myInput" placeholder="Full Name" name="Name" size="40" maxlength="100"></strong></p>
+                <p><strong>Phone: <input class="Phone" type="tel" value="" id="Phone" placeholder="123-610-9778" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" maxlength="12" required></strong></p>
+                <p><strong>Email: <input class="Email" type="text" id="Email" placeholder="youremail@email.com" name="Email" size="40" maxlength="100"></strong></p>
             </div>
         </div>
     </div>
 <div class="SBTN">
     <!-- <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button> -->
-    <button class="SB" onclick="document.getElementById('myInput').value = ''"><font size="+1" font color="">Send</font></button>
+    <button class="SB" onclick="document.getElementById('myInput').getElementById('Phone').getElementById('Email').value = ''"><font size="+1" font color="">Send</font></button>
+    <button class="SB" onclick="document.getElementById('Phone').value = ''"></button>
+    <button class="SB" onclick="document.getElementById('Email').value = ''"></button>
     <!-- <a style="text-decoration:none;" href='#'></a> -->
 </div>
 <footer>
