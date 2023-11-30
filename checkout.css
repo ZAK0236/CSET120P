@@ -80,6 +80,7 @@ footer {
 }
 
 .credit-card {
+    display: none;
     width: 360px;
     height: 400px;
     margin: 60px auto 0;
