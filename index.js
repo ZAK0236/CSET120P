@@ -197,3 +197,4 @@ function purchaseClicked(){
     }
     updateCartTotal()
 }
+
