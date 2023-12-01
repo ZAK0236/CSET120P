@@ -32,15 +32,15 @@
         <div class="contact-info">
             <div class="Input">
                 <h2 class="contact-title">contact info</h2>
-                <p><strong>Name: <input type="text" value="" id="Name" placeholder="Full Name" size="40" maxlength="100" required></strong></p>
-                <p><strong>Phone: <input type="tel" value="" id="Phone" placeholder="123-610-9778" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" maxlength="12" required></strong></p>
-                <p><strong>Email: <input type="text" id="Email" placeholder="youremail@email.com" size="40" maxlength="100" required></strong></p>
+                <p><strong>Name: <input type="text" value="" id="Name" placeholder="Full Name" size="40" minlength="50" maxlength="50" required></strong></p>
+                <p><strong>Phone: <input type="tel" value="" id="Phone" placeholder="123-610-9778" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" minlength="12" maxlength="12" required></strong></p>
+                <p><strong>Email: <input type="email" id="Email" placeholder="youremail@email.com" size="40" minlength="50" maxlength="50" required></strong></p>
             </div>
         </div>
     </div>
 <div class="SBTN">
     <!-- <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button> -->
-    <button class="SB" onclick="document.getElementById('myInput').value = ''"><font size="+1" font color="">Send</font></button>
+    <button class="SB" onclick="document.getElementById('Name').value = ''"><font size="+1" font color="">Send</font></button>
     <button class="SB" onclick="document.getElementById('Phone').value = ''"><font size="+1" font color="">Send</font></button>
     <button class="SB" onclick="document.getElementById('Email').value = ''"><font size="+1" font color="">Send</font></button>
     <!-- <a style="text-decoration:none;" href='#'></a> -->
