@@ -18,7 +18,15 @@
     </div>
     <p><strong>Enter name for your order: <input class="info" type="text" placeholder="Name" name="Name" size="40"></strong></p>
     <br>
-    
+    <form>
+        <p><strong>Dine-In Pickup or Delivery:</strong></p>
+        <p class="info" id="dine-btn">Dine-In  <input type="radio" name = "selection"></p>
+        <p class="info" id=pickup-btn>Pickup  <input type="radio" name = "selection"></p>
+        <p class="info" id="delivery-btn">Delivery  <input type="radio" name = "selection"></p>
+    </form>
+    <br>
+    <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="Name" size="40"></strong></p>
+    <br>
     <form>
         <p><strong>Choose Payment Option:</strong></p>
         <p class="info" id=cash-btn>Cash  <input type="radio" name = "selection"></p>
@@ -30,13 +38,13 @@
             <h4 class="title">Enter Credit Card Details</h4>
         </div>
         <div class="form-body">
-            <input type="text" class="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required>
-            <input type="text" class="month" placeholder="Month" minlength="2" maxlength="2" required>    
-            <input type="text" class="year" placeholder="Year" minlength="2" maxlength="2" required>
+            <input type="text" class="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required/>
+            <input type="text" class="month" placeholder="Month" minlength="2" maxlength="2" required/>    
+            <input type="text" class="year" placeholder="Year" minlength="4" maxlength="4" required/>
 
             <div class="card-verify">
                 <div class="cvv-input">
-                    <input type="text" placeholder="CVV" minlength="3" maxlength="3" required>
+                    <input type="text" placeholder="CVV" minlength="3" maxlength="3" required/>
                 </div>
                 <div class="cvv-details">
                     <p>3 digits usually found <br> on the signature strip</p>
@@ -44,12 +52,7 @@
             </div>
         </div>
     </form>
-    <!-- <div id="creditInfo">
-        <p>Cardholder Name: <input class="info" type="text" placeholder="Name" name="Name" size="13"></p>
-        <p>Card Number: <input class="info" type="text" placeholder=" xxxx-xxxx-xxxx-xxxx" name="Name" size="15"></p>
-        <p>Billing Address: <input class="info" type="text" placeholder="Address" name="Name" size="13"></p>
-        <p>Security Code: <input class="info" type="text" placeholder="CVC" name="Name" size="13"></p>
-    </div> -->
+    <a style="text-decoration:none;" href="receipt.html"><button class="btn-confirm" type="button">CONFIRM PURCHASE</button></a>
 </div>
 <footer>
     <div class="copyright">
