@@ -98,20 +98,20 @@ Input{
     border: 1px solid rgb(142, 138, 138);
     padding: 10px;
 }
-.Name{
+#Name{
     margin-left: 5px;
     margin-top: 2px;
     height: 20px;
     position: absolute;
 }
-.Phone{
+#Phone{
     margin-left: 1px;
     margin-top: 8px;
     height: 30px;
     margin-bottom: 10px;
     width: 320px;
 }
-.Email{
+#Email{
     margin-left: 5px;
     margin-top: -3px;
     height: 60px;
