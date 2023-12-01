@@ -82,7 +82,7 @@ footer {
 .credit-card {
     display: none;
     width: 360px;
-    height: 400px;
+    height: 330px;
     margin: 60px auto 0;
     border: 1px solid #9fcbd6;
     border-radius: 6px;
@@ -161,3 +161,19 @@ footer {
     margin-bottom: 20px;
 }
 .cvv-details p {margin-top: 6px;}
+
+.btn-confirm {
+    display: none;
+    color: white;
+    background-color: #0133b7;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    margin: 40px auto 80px auto;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.btn-confirm:hover {background-color: #9fcbd6;}
