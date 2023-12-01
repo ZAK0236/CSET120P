@@ -204,12 +204,14 @@ function purchaseClicked(){
 const cardBtn = document.querySelector('#card-btn')
 const cashBtn = document.querySelector('#cash-btn')
 const div = document.querySelector('.credit-card')
+const conf = document.querySelector('.btn-confirm')
 
 cardBtn.addEventListener('click', () => {
     div.style.display = 'block'
+    conf.style.display = 'block'
 })
 
 cashBtn.addEventListener('click', () => {
     div.style.display = 'none'
+    conf.style.display = 'block'
 })
-
