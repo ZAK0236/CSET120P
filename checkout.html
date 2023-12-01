@@ -18,7 +18,15 @@
     </div>
     <p><strong>Enter name for your order: <input class="info" type="text" placeholder="Name" name="Name" size="40" minlength="50" maxlength="50" required></strong></p>
     <br>
-    
+    <form>
+        <p><strong>Dine-In Pickup or Delivery:</strong></p>
+        <p class="info" id="dine-btn">Dine-In  <input type="radio" name = "selection"></p>
+        <p class="info" id=pickup-btn>Pickup  <input type="radio" name = "selection"></p>
+        <p class="info" id="delivery-btn">Delivery  <input type="radio" name = "selection"></p>
+    </form>
+    <br>
+    <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="Name" size="40"></strong></p>
+    <br>
     <form>
         <p><strong>Choose Payment Option:</strong></p>
         <p class="info" id=cash-btn>Cash  <input type="radio" name = "selection"></p>
@@ -44,12 +52,7 @@
             </div>
         </div>
     </form>
-    <!-- <div id="creditInfo">
-        <p>Cardholder Name: <input class="info" type="text" placeholder="Name" name="Name" size="13"></p>
-        <p>Card Number: <input class="info" type="text" placeholder=" xxxx-xxxx-xxxx-xxxx" name="Name" size="15"></p>
-        <p>Billing Address: <input class="info" type="text" placeholder="Address" name="Name" size="13"></p>
-        <p>Security Code: <input class="info" type="text" placeholder="CVC" name="Name" size="13"></p>
-    </div> -->
+    <a style="text-decoration:none;" href="receipt.html"><button class="btn-confirm" type="button">CONFIRM PURCHASE</button></a>
 </div>
 <footer>
     <div class="copyright">
