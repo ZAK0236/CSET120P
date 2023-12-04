@@ -147,6 +147,8 @@ footer {
     align-items: center;
     padding: 40px 20px;
     width: 100%;
+    position: absolute;
+    margin-top: 10px;
 }
 
 .social-media {
