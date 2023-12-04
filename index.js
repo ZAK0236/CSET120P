@@ -214,3 +214,10 @@ cashBtn.addEventListener('click', () => {
     div.style.display = 'none'
     conf.style.display = 'block'
 })
+
+
+function passValues() {
+    var name = document.getElementById("txt").value;
+    localStorage.setItem("textvalue", name);
+    return  false;
+}
