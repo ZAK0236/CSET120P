@@ -214,3 +214,11 @@ cashBtn.addEventListener('click', () => {
     div.style.display = 'none'
     conf.style.display = 'block'
 })
+
+function sendClicked(){
+
+    var cartItems = document.getElementsByClassName("cart-items")[0]
+    while(cartItems.hasChildNodes()) {
+        cartItems.removeChild(cartItems.firstChild)
+    }
+}
