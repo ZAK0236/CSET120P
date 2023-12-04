@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    text-align: center;
+}
+.logo {
+    max-width: 270px;
+    display: block;
+    margin: 0 auto;
+}
+
+#top, #bottom, #left, #right {
+	background: #9fcbd6;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+hr{
+    width: 100px;
+    height: 3px;
+    background-color: #9fcbd6;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #9fcbd6;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.social-media {
+    padding: 0px 20px;
+}
+
+.social-logo{
+    margin: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.social-logo :last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    text-align: right;
+    font-size: small;
+    font-size: medium;
+}
+
+.info {
+    font-size: large;
+}
+
+.credit-card {
+    display: none;
+    width: 360px;
+    height: 330px;
+    margin: 60px auto 0;
+    border: 1px solid #9fcbd6;
+    border-radius: 6px;
+    background-color: #9fcbd6;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,.10);
+    margin-bottom: 40px;
+}
+
+.form-header {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+
+.title{
+    font-size: 18px;
+    margin: 0;
+    color: #000000;
+}
+
+.card-number, .cvv-input input, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number, .cvv-details, .cvv-input input, .month, .year{
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 14px;
+}
+
+.card-number {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.month, .year {
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.month{float: left;} .year{float: right;}
+
+.cvv-input input {
+    float: left;
+    width: 145px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.cvv-details{
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    float: right;
+    margin-bottom: 20px;
+}
+.cvv-details p {margin-top: 6px;}
+
+.btn-confirm {
+    display: none;
+    color: white;
+    background-color: #0133b7;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+    margin: 40px auto 80px auto;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.btn-confirm:hover {background-color: #9fcbd6;}

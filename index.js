@@ -61,11 +61,10 @@ function addMenuItem(event){
 }
 
 function removeMenuItem(event){
-  
+
 }
 
 //The following functions are for users to add and remove items from cart
-
 if(document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready)
 } else {
@@ -90,8 +89,7 @@ function ready() {
         var button = addToCartButtons[i]
         button.addEventListener('click', addToCartClicked)
     }
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
-    // .addEventListener('click', sendClicked)
+    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked) 
 }
 
 //Function to remove an item from your cart by clicking on the red "remove" button
@@ -176,10 +174,26 @@ function purchaseClicked(){
     updateCartTotal()
 }
 
-// function sendClicked(){
+//Toggles display of Credit Crad Info
 
-//     var button = document.getElementsByClassName(button)[0]
-//     while(button.hasChildNodes()) {
-//         button.removeChild(button.firstChild)
-//     }
-// }
+const cardBtn = document.querySelector('#card-btn')
+const cashBtn = document.querySelector('#cash-btn')
+const div = document.querySelector('.credit-card')
+const conf = document.querySelector('.btn-confirm')
+
+cardBtn.addEventListener('click', () => {
+    div.style.display = 'block'
+    conf.style.display = 'block'
+})
+
+cashBtn.addEventListener('click', () => {
+    div.style.display = 'none'
+    conf.style.display = 'block'
+})
+
+
+function passValues() {
+    var name = document.getElementById("txt").value;
+    localStorage.setItem("textvalue", name);
+    return  false;
+}

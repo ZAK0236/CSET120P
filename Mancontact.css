@@ -10,29 +10,8 @@ html{
     text-rendering: optimizeLegibility;
 }
 
-h1{
-    border-bottom: 2px solid rgb(81, 0, 209);
-    width: fit-content;
-    margin: auto;
-    color: black;
-}
-
-.contact-info{
-    background-color: rgb(240, 240, 240);
-    box-shadow: inset 0px 0px 10px gray;
-    max-width: 1200px;
-    margin: 25px auto;
-    padding: 20px;
-    color: black;
-    text-transform: uppercase;
-    height: 210px;
-}
-.contact-title{
-    border-bottom: 2px solid rgb(81, 0, 209);
-    width: fit-content;
-    color: black;
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.container {
+    text-align: center;
 }
 .logo {
     max-width: 270px;
@@ -93,50 +72,12 @@ hr{
     margin-bottom: 30px;
 }
 
-Input{
-    border-radius: 7px;
-    border: 1px solid rgb(142, 138, 138);
-    padding: 10px;
-}
-#Name{
-    margin-left: 5px;
-    margin-top: 2px;
-    height: 20px;
-    position: absolute;
-}
-#Phone{
-    margin-left: 1px;
-    margin-top: 8px;
-    height: 30px;
-    margin-bottom: 10px;
-    width: 320px;
-}
-#Email{
-    margin-left: 5px;
-    margin-top: -3px;
-    height: 60px;
-    position: absolute;
-}
-.SBTN{
-    background-color: #0133b7;
-    color: #0133b7;
-    padding-top: 1px;
-    padding-left: 38px;
-    min-height: 20px;
-    min-width: 120px;
-    margin-top: 10px;
-    margin-left: 830px;
-    width: 10px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-    border-style: none;
-    cursor: pointer;
-}
-.SB{
-    background-color: #0133b7;
-    color: white;
-    cursor: pointer;
-    border-style: none;
+h1{
+    color: black;
+    text-align: center;
+    border-bottom: 2px solid rgb(81, 0, 209);
+    width: fit-content;
+    margin: auto;
 }
 
 footer {
@@ -148,7 +89,7 @@ footer {
     padding: 40px 20px;
     width: 100%;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 .social-media {

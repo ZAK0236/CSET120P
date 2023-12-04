@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="top"></div>
+        <div id="bottom"></div>
+    <img src="IMG/lucys_logo.png" alt="Lucy's" class="logo">
+    <hr><br>
+    </div>
+    <form action="receipt.html.">
+    <p><strong>Enter name for your order: <input class="info" id="txt" type="text" placeholder="Name" name="Name" size="40" minlength="50" maxlength="50" required></strong></p>
+    <br>
+        <p><strong>Dine-In Pickup or Delivery:</strong></p>
+        <p class="info" id="dine-btn">Dine-In  <input type="radio" name = "selection"></p>
+        <p class="info" id=pickup-btn>Pickup  <input type="radio" name = "selection"></p>
+        <p class="info" id="delivery-btn">Delivery  <input type="radio" name = "selection"></p>
+    </form>
+    <br>
+    <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="Name" size="40" minlength="10" maxlength="10" required></strong></p>
+    <br>
+    <form>
+        <p><strong>Choose Payment Option:</strong></p>
+        <p class="info" id=cash-btn>Cash  <input type="radio" name = "selection"></p>
+        <p class="info" id="card-btn">Card  <input type="radio" name = "selection"></p>
+    </form>
+    <br>
+    <form class="credit-card">
+        <div class="form-header">
+            <h4 class="title">Enter Credit Card Details</h4>
+        </div>
+        <div class="form-body">
+            <input type="text" class="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required/>
+            <input type="text" class="month" placeholder="Month" minlength="2" maxlength="2" required/>    
+            <input type="text" class="year" placeholder="Year" minlength="4" maxlength="4" required/>
+
+            <div class="card-verify">
+                <div class="cvv-input">
+                    <input type="text" placeholder="CVV" minlength="3" maxlength="3" required/>
+                </div>
+                <div class="cvv-details">
+                    <p>3 digits usually found <br> on the signature strip</p>
+                </div>
+            </div>
+        </div>
+    </form>
+    <a style="text-decoration:none;" href="receipt.html"><button class="btn-confirm" type="button" onclick="passValues();">CONFIRM PURCHASE</button></a>
+</div>
+<footer>
+    <div class="copyright">
+        &copy; 2023 by Lucy's. All Rights Reserved.
+    </div>
+    
+    <div class="social-media">
+        <font size="+3" font color=""><ion-icon name="logo-twitter" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-instagram" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-facebook" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-pinterest" class="social-logo"></ion-icon></font>
+    </div>
+</footer>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

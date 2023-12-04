@@ -20,30 +20,31 @@
         <a href="contact.html" class="active">CONTACT</a>
     </nav>
     <br><br>
-    <hr>
     </div>
     <h1>CONTACT US</h1>
     <div class="contact-section">
         <div class="contact-info">
             <h2 class="contact-title">Diner contact info</h2>
             <p><strong>Phone: </strong>(717)123-4567</p>
-            <p><strong>Email: </strong>lucysdiner@mail.com</p>
+            <p><strong>Email: </strong>lucysdiner@email.com</p>
             <p><strong>Mailing Address: </strong>8910 Diner st.</p>
         </div>
         <div class="contact-info">
             <div class="Input">
                 <h2 class="contact-title">contact info</h2>
-                <p><strong>Phone: <input class="Number" type="text" placeholder="Phone Number" name="Name" size="40"></strong></p>
-                <p><strong>Email: <input class="Email" type="text" placeholder="Email" name="Name" size="40"></strong></p>
-                <p><strong>Mailing Address: <input class="Mail" type="text" placeholder="Mailing Address" name="Name" size="40"></strong></p>
+                <p><strong>Name: <input type="text" value="" id="Name" placeholder="Full Name" size="40" minlength="50" maxlength="50" required></strong></p>
+                <p><strong>Phone: <input type="tel" value="" id="Phone" placeholder="123-610-9778" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" minlength="12" maxlength="12" required></strong></p>
+                <p><strong>Email: <input type="email" id="Email" placeholder="youremail@email.com" size="40" minlength="50" maxlength="50" required></strong></p>
             </div>
         </div>
     </div>
 <div class="SBTN">
-    <!-- <a style="text-decoration:none;" href='#'><div onclick = "sendClicked()" class="Send">Send</div></a> -->
-    <!-- <button onclick = "sendClicked()" class="button"><font size="+1" font color="">Send</font></button> -->
+    <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button>
 </div>
-</div>
+    <!-- <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button> -->
+    <!-- <button class="SB" onclick="document.getElementById('Name').value = ''"><font size="+1" font color="">Send</font></button>
+    <button class="SB" onclick="document.getElementById('Phone').value = ''"><font size="+1" font color="">Send</font></button>
+    <button class="SB" onclick="document.getElementById('Email').value = ''"><font size="+1" font color="">Send</font></button> -->
 <footer>
     <div class="copyright">
         &copy; 2023 by Lucy's. All Rights Reserved.
