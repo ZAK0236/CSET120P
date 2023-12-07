@@ -18,24 +18,20 @@ html{
     display: block;
     margin: 0 auto;
 }
-.container{
-    margin-bottom: 100px;
-    opacity: 0.3;
-}
-.image{
-    position: relative;
-}
-.TopTitle{
-    color: #0133b7;
-    width: 100%;
 
+#logo{
+    position: absolute;
+    display: block;
+    z-index: -1;
+    /* display: flex; */
 }
-/* .Bottom{
-    color: #0133b7;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-} */
+#bkgrd-text{
+    color:lightgrey;
+    font-size:100px;
+    transform:rotate(300deg);
+    -webkit-transform:rotate(400deg);
+}
+
 footer {
     background-color: #9fcbd6;
     color: rgb(255, 255, 255);
@@ -45,7 +41,7 @@ footer {
     padding: 40px 20px;
     width: 100%;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 500px;
 }
 
 .social-media {
