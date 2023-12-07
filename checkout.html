@@ -5,6 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Page</title>
     <link rel="stylesheet" href="checkout.css">
+    <style>
+        /* Centering the table */
+        #order-summary {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #order-summary table {
+            margin-top: 20px;
+            /* Adjust as needed */
+            border-collapse: collapse;
+        }
+    
+        #order-summary th,
+        #order-summary td {
+            border: 1px solid black;
+            /* For table border */
+            padding: 8px;
+            /* For cell padding */
+        }
+    
+        #order-summary th {
+            background-color: #f2f2f2;
+            /* For header background */
+        }
+
+/* The switch - the box around the slider */
+.payment-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-label {
+    margin: 0 10px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+    </style>
 </head>
 <body>
 <div class="container">
@@ -16,43 +119,51 @@
     <img src="IMG/lucys_logo.png" alt="Lucy's" class="logo">
     <hr><br>
     </div>
-    <form action="receipt.html.">
-    <p><strong>Enter name for your order: <input class="info" id="txt" type="text" placeholder="Name" name="Name" size="40" minlength="50" maxlength="50" required></strong></p>
-    <br>
-        <p><strong>Dine-In Pickup or Delivery:</strong></p>
-        <p class="info" id="dine-btn">Dine-In  <input type="radio" name = "selection"></p>
-        <p class="info" id=pickup-btn>Pickup  <input type="radio" name = "selection"></p>
-        <p class="info" id="delivery-btn">Delivery  <input type="radio" name = "selection"></p>
-    </form>
-    <br>
-    <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="Name" size="40" minlength="10" maxlength="10" required></strong></p>
-    <br>
-    <form>
-        <p><strong>Choose Payment Option:</strong></p>
-        <p class="info" id=cash-btn>Cash  <input type="radio" name = "selection"></p>
-        <p class="info" id="card-btn">Card  <input type="radio" name = "selection"></p>
-    </form>
-    <br>
-    <form class="credit-card">
-        <div class="form-header">
-            <h4 class="title">Enter Credit Card Details</h4>
-        </div>
-        <div class="form-body">
-            <input type="text" class="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" required/>
-            <input type="text" class="month" placeholder="Month" minlength="2" maxlength="2" required/>    
-            <input type="text" class="year" placeholder="Year" minlength="4" maxlength="4" required/>
+    <h1>Checkout Summary</h1>
+    <div id="order-summary"></div>
+</br>
+    <form action="receipt.html" id="checkout" method="get">
+        <p><strong>Enter name for your order: <input class="info" id="userName" type="text" placeholder="Name" name="name" size="40" maxlength="50" required></strong></p>
+        <br>
+            <p><strong>Dine-In Pickup or Delivery:</strong></p>
+            <p class="info" id="dine-btn">Dine-In  <input type="radio" name="type" value="Dine-In"></p>
+            <p class="info" id=pickup-btn>Pickup  <input type="radio" name="type" value="Pickup"></p>
+            <p class="info" id="delivery-btn">Delivery  <input type="radio" name="type" value="Delivery"></p>
+        <br>
+        <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="tip" size="40" maxlength="10" required></strong></p>
+        <br>
+            <p><strong>Choose Payment Option:</strong></p>
+<div class="payment-switch">
+    <span class="payment-label">Cash</span>
+    <label class="switch">
+        <input type="checkbox" id="card-btn" value="Cash">
+        <input type="hidden" id="payment" name="payment" value="Cash">
+        <span class="slider round"></span>
+    </label>
+    <span class="payment-label">Credit Card</span>
+</div>
+        <br>
+        <div class="credit-card">
+            <div class="form-header">
+                <h4 class="title">Enter Credit Card Details</h4>
+            </div>
+            <div class="form-body">
+                <input type="text" class="card-number" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" />
+                <input type="text" class="month" id="ccm" placeholder="Month" minlength="2" maxlength="2" />    
+                <input type="text" class="year" id="ccy" placeholder="Year" minlength="4" maxlength="4" />
 
-            <div class="card-verify">
-                <div class="cvv-input">
-                    <input type="text" placeholder="CVV" minlength="3" maxlength="3" required/>
-                </div>
-                <div class="cvv-details">
-                    <p>3 digits usually found <br> on the signature strip</p>
+                <div class="card-verify">
+                    <div class="cvv-input">
+                        <input type="text" id="ccv" placeholder="CVV" minlength="3" maxlength="3"/>
+                    </div>
+                    <div class="cvv-details">
+                        <p>3 digits usually found <br> on the signature strip</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <button class="btn-confirm" type="submit">CONFIRM PURCHASE</button>
     </form>
-    <a style="text-decoration:none;" href="receipt.html"><button class="btn-confirm" type="button" onclick="passValues();">CONFIRM PURCHASE</button></a>
 </div>
 <footer>
     <div class="copyright">
@@ -66,8 +177,15 @@
         <font size="+3" font color=""><ion-icon name="logo-pinterest" class="social-logo"></ion-icon></font>
     </div>
 </footer>
+
 </div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="index.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        appendHiddenInputs();
+        displayOrderSummary();
+    });
+</script>
 </body>
 </html>
