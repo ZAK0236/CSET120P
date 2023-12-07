@@ -18,6 +18,16 @@ html{
     display: block;
     margin: 0 auto;
 }
+.container{
+    margin-bottom: 100px;
+    opacity: 0.3;
+}
+.image{
+    position: relative;
+}
+.TopTitle{
+    color: #0133b7;
+    width: 100%;
 
 .mainFooter {
     background-color: #9fcbd6;
@@ -28,7 +38,7 @@ html{
     padding: 40px 20px;
     width: 100%;
     position: absolute;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .social-media {
