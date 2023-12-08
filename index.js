@@ -33,62 +33,6 @@ function login(){
     }
 }
 
-//menu code
-
-function display(){
-    
-}
-
-//customer menu code
-
-function addToCart(){
-
-}
-
-function removeFromCart(){
-
-}
-
-//manager menu code
-
-function newItem(){
-    var addInterface = document.createElement('div')
-    addInterface.classList.add('add-interface')
-    var shopItems = document.getElementsByClassName('shop-items')[0]
-    var interfaceContent = `<span class="shop-item-title"><input type="text" id="title"></span>
-        <input type="text" id="img">
-        <div class="shop-item-details">
-            <span class="shop-item-price"><input type="text" id="price"></span>
-            <button class="btn btn-primary shop-item-button" type="button" onclick"addMenuItem(event)">ADD ITEM</button>
-        </div>`
-    addInterface.innerHTML = interfaceContent
-    shopItems.append(addInterface)
-    
-}
-
-function addMenuItem(event){
-    var name = document.getElementById('title')
-    var price = document.getElementById('price')
-    var img = document.getElementById('img')
-    var data = JSON.parse(menu)
-    data.breakfast.push({
-        name: "name",
-        price: "price",
-        img: "img"
-    })
-    menu = JSON.stringify(data)
-    
-    var buttonClicked = event.target
-    buttonClicked.parenElement.parenElement.remove()
-    console.log("test")
-
-    display()
-}
-
-function removeMenuItem(event){
-
-}
-
 //The following functions are for users to add and remove items from cart
 if(document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready)
