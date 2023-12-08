@@ -122,7 +122,7 @@ input:checked + .slider:before {
     <div id="order-summary"></div>
 </br>
     <form action="receipt.html" id="checkout" method="get">
-        <p><strong>Enter name for your order: <input class="info" id="userName" type="text" placeholder="Name" name="name" size="40" minlength="1" maxlength="30" onkeydown="return /[a-zA-Z]/i.test(event.key)" required></strong></p>
+        <p><strong>Enter name for your order: <input class="info" id="userName" type="text" placeholder="Name" name="name" size="40" minlength="1" maxlength="30" onkeydown="return /[a-z A-Z]/i.test(event.key)" required></strong></p>
         <br>
             <p><strong>Dine-In Pickup or Delivery:</strong></p>
             <p class="info" id="dine-btn">Dine-In  <input id="myRadio" type="radio" name="type" value="Dine-In" required></p>
@@ -137,7 +137,7 @@ input:checked + .slider:before {
     <label class="switch">
         <input type="checkbox" id="card-btn" value="Cash">
         <span class="slider round"></span>
-        <!-- <input type="hidden" id="payment" name="payment" value="Cash"> -->
+        <input type="hidden" id="payment" name="payment" value="Cash">
     </label>
     <span class="payment-label">Credit Card</span>
 </div>
