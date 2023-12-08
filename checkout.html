@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkout Page</title>
     <link rel="stylesheet" href="checkout.css">
-    <style>
+<style>
         /* Centering the table */
         #order-summary {
             display: flex;
@@ -42,9 +42,8 @@
 
 .payment-label {
     margin: 0 10px; /* Adjust spacing as needed */
-    font-size: 16px; /* Adjust font size as needed */
+    font-size: 20px; /* Adjust font size as needed */
 }
-
 
 .switch {
     position: relative;
@@ -86,11 +85,11 @@
 }
 
 input:checked + .slider {
-    background-color: #2196F3;
+    background-color: #0133b7;
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px #0133b7;
 }
 
 input:checked + .slider:before {
@@ -107,7 +106,7 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
-    </style>
+</style>
 </head>
 <body>
 <div class="container">
@@ -123,22 +122,22 @@ input:checked + .slider:before {
     <div id="order-summary"></div>
 </br>
     <form action="receipt.html" id="checkout" method="get">
-        <p><strong>Enter name for your order: <input class="info" id="userName" type="text" placeholder="Name" name="name" size="40" maxlength="50" required></strong></p>
+        <p><strong>Enter name for your order: <input class="info" id="userName" type="text" placeholder="Name" name="name" size="40" minlength="1" maxlength="30" onkeydown="return /[a-z A-Z]/i.test(event.key)" required></strong></p>
         <br>
             <p><strong>Dine-In Pickup or Delivery:</strong></p>
-            <p class="info" id="dine-btn">Dine-In  <input type="radio" name="type" value="Dine-In"></p>
-            <p class="info" id=pickup-btn>Pickup  <input type="radio" name="type" value="Pickup"></p>
-            <p class="info" id="delivery-btn">Delivery  <input type="radio" name="type" value="Delivery"></p>
+            <p class="info" id="dine-btn">Dine-In  <input id="myRadio" type="radio" name="type" value="Dine-In" required></p>
+            <p class="info" id=pickup-btn>Pickup  <input id="myRadio" type="radio" name="type" value="Pickup" required></p>
+            <p class="info" id="delivery-btn">Delivery  <input id="myRadio" type="radio" name="type" value="Delivery" required></p>
         <br>
-        <p><strong>Add Tip: <input class="info" type="text" placeholder="Tip" name="tip" size="40" maxlength="10" required></strong></p>
+        <p><strong>Add Tip: <input class="info" type="number" placeholder="Tip" name="tip" size="40" onkeypress="if(this.value.length==10) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required></strong></p>
         <br>
             <p><strong>Choose Payment Option:</strong></p>
 <div class="payment-switch">
     <span class="payment-label">Cash</span>
     <label class="switch">
         <input type="checkbox" id="card-btn" value="Cash">
-        <input type="hidden" id="payment" name="payment" value="Cash">
         <span class="slider round"></span>
+        <input type="hidden" id="payment" name="payment" value="Cash">
     </label>
     <span class="payment-label">Credit Card</span>
 </div>
@@ -148,13 +147,13 @@ input:checked + .slider:before {
                 <h4 class="title">Enter Credit Card Details</h4>
             </div>
             <div class="form-body">
-                <input type="text" class="card-number" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx" minlength="16" maxlength="16" />
-                <input type="text" class="month" id="ccm" placeholder="Month" minlength="2" maxlength="2" />    
-                <input type="text" class="year" id="ccy" placeholder="Year" minlength="4" maxlength="4" />
+                <input type="number" class="card-number" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx" onkeypress="if(this.value.length==16) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+                <input type="number" class="month" id="ccm" placeholder="Month" onkeypress="if(this.value.length==2) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>    
+                <input type="number" class="year" id="ccy" placeholder="Year" onkeypress="if(this.value.length==4) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
 
                 <div class="card-verify">
                     <div class="cvv-input">
-                        <input type="text" id="ccv" placeholder="CVV" minlength="3" maxlength="3"/>
+                        <input type="number" id="ccv" placeholder="CVV" onkeypress="if(this.value.length==3) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
                     </div>
                     <div class="cvv-details">
                         <p>3 digits usually found <br> on the signature strip</p>

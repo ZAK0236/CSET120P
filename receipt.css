@@ -10,6 +10,32 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+#top, #bottom, #left, #right {
+	background: #9fcbd6;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+hr{
+    width: 100px;
+    height: 3px;
+    background-color: #9fcbd6;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
 .container {
     text-align: center;
 }
@@ -18,47 +44,22 @@ html{
     display: block;
     margin: 0 auto;
 }
-.container{
-    margin-bottom: 100px;
-    opacity: 0.3;
-}
-.image{
-    position: relative;
-}
-.TopTitle{
-    color: #0133b7;
-    width: 100%;
-}
-.mainFooter {
-    background-color: #9fcbd6;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    width: 100%;
-    position: absolute;
-    margin-top: 10px;
-}
 
-.social-media {
-    padding: 0px 20px;
+#logo{
+    position:absolute;
+    display:block;
+    min-height:50%; 
+    min-width:50%;
+    z-index: 1;
+    margin-left: 450px;
+    margin-top: 370px;
+    opacity: 0.4;
 }
-
-.social-logo{
-    margin: 5px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.social-logo :last-child {
-    margin-right: 0;
-}
-
-.copyright {
-    text-align: right;
-    font-size: small;
-    font-size: medium;
+#bkgrd-text{
+    color:lightgrey;
+    font-size:120px;
+    transform:rotate(400deg);
+    -webkit-transform:rotate(400deg);
 }
 
 body {
@@ -75,6 +76,7 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 0px;
 }
 
 .receipt-container h2 {
@@ -110,14 +112,16 @@ body {
 
 .receipt-footer {
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
     color: #333;
     border-top: 1px solid #ddd;
+    width: 398px;
+    margin-top: 180px;
 }
 
 .receipt-footer p {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .receipt-details {
@@ -128,6 +132,11 @@ body {
 
 .receipt-details p {
     margin: 0;
+}
+
+return-menu-link{
+    cursor: pointer;
+    margin-top: 200px;
 }
 
 .text-right {
@@ -167,4 +176,38 @@ table td:nth-child(3),
 table td:nth-child(4) {
     /* Total */
     text-align: center;
+}
+
+footer {
+    background-color: #9fcbd6;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    position: absolute;
+    margin-top: 150px;
+    padding-top: 100px;
+    margin-left: -5px;
+}
+
+.social-media {
+    padding: 0px 20px;
+}
+
+.social-logo{
+    margin: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.social-logo :last-child {
+    margin-right: 0;
+}
+
+.copyright {
+    text-align: right;
+    font-size: small;
+    font-size: medium;
 }

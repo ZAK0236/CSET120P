@@ -178,19 +178,57 @@ footer {
 
 .btn-confirm:hover {background-color: #9fcbd6;}
 
+        /* Centering the table */
+        #order-summary {
+            display: flex;
+            justify-content: center;
+        }
+    
+        #order-summary table {
+            margin-top: 20px;
+            /* Adjust as needed */
+            border-collapse: collapse;
+        }
+    
+        #order-summary th,
+        #order-summary td {
+            border: 1px solid black;
+            /* For table border */
+            padding: 8px;
+            /* For cell padding */
+        }
+    
+        #order-summary th {
+            background-color: #f2f2f2;
+            /* For header background */
+        }
+
 /* The switch - the box around the slider */
+.payment-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.payment-label {
+    margin: 0 10px; /* Adjust spacing as needed */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
 .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
 }
 
 /* Hide default HTML checkbox */
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 /* The slider */
@@ -218,11 +256,11 @@ footer {
     transition: .4s;
 }
 
-input:checked + .slider {
-    background-color: #2196F3;
+input:checked + .slider{
+    background-color: #0133b7;
 }
 
-input:focus + .slider {
+input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
