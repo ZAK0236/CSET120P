@@ -224,13 +224,16 @@
         <span class="cart-price cart-header cart-column">PRICE</span>
         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
     </div>
-    <div class="cart-items">
-    </div>
-    <div class="cart-total">
-        <strong class="cart-total-title">Total</strong>
-        <span class="cart-total-price">$0.00</span>
-    </div>
-    <a style="text-decoration:none;" href="checkout.html"><button class="btn-primary btn-purchase" type="button">PURCHASE</button></a>
+    <form action="checkout.html" method="get">
+        <div class="cart-items" id="items">
+            <!-- Cart items will be added here -->
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0.00</span>
+        </div>
+        <button class="btn-primary btn-purchase" type="submit">PURCHASE</button>
+        </form>
 </section>
 <footer>
     <div class="copyright">
