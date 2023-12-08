@@ -33,38 +33,6 @@ function login(){
     }
 }
 
-//menu code
-
-function display(){
-    
-}
-
-//manager menu code
-
-function addMenuItem(event){
-    console.log("test")
-    var name = document.getElementById('title')
-    var price = document.getElementById('price')
-    var img = document.getElementById('img')
-    var data = JSON.parse()
-    data.breakfast.push({
-        name: "name",
-        price: "price",
-        img: "img"
-    })
-    menu.JSON = JSON.stringify(data)
-    
-    var buttonClicked = event.target
-    buttonClicked.parenElement.parenElement.remove()
-    console.log("test")
-
-    display()
-}
-
-function removeMenuItem(event){
-
-}
-
 //The following functions are for users to add and remove items from cart
 if(document.readyState == "loading"){
     document.addEventListener("DOMContentLoaded", ready)
