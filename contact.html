@@ -30,23 +30,30 @@
             <p><strong>Mailing Address: </strong> 8910 Diner St. Lancaster Pa, 17603</p>
         </div>
         <div class="contact-info">
-            <form action="Mancontact.html">
-                <div class="Input">
-                    <h2 class="contact-title">contact info</h2>
-                    <p><strong>Name: <input type="text" value="" id="Name" placeholder="Full Name" size="40" minlength="1" maxlength="30" onkeydown="return /[a-zA-Z]/i.test(event.key)" required></strong></p>
-                    <p><strong>Phone: <input type="tel" value="" id="Phone" placeholder="123-610-9778" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" minlength="12" maxlength="12" required></strong></p>
-                    <p><strong>Email: <input type="email" id="Email" pattern=".+@example\.+com" placeholder="youremail@email.com" size="40" minlength="50" maxlength="50" required></strong></p>
-                </div>
-                <div class="SBTN">
-                    <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button>
-                </div>
-            </form>
+            <!-- <fieldset>
+                <form action="Mancontact.html">
+                    <legend>Contact Info</legend>
+                    <label>Name:
+                    <input type="text" name="userName" id="userName"/></label><br />
+                    <label>Phone:
+                    <input type="text" name="phoneNumber" id="phoneNumber"/></label><br>
+                    <label>Email:
+                    <input type="text" name="emailAd" id="emailAd"/></label><br />
+                    <input type="submit" value="Submit" onclick="getData()">
+                </form>
+            </fieldset> -->
+            <div class="Input">
+                <h2 class="contact-title">contact info</h2>
+                <p><strong>Name: <input type="text" value="" id="Name" placeholder="Full Name" size="40" minlength="50" maxlength="50" required></strong></p>
+                <p><strong>Phone: <input type="tel" value="" id="Phone" placeholder="123-610-9778" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="40" minlength="12" maxlength="12" required></strong></p>
+                <p><strong>Email: <input type="email" id="Email" placeholder="youremail@email.com" size="40" minlength="50" maxlength="50" required></strong></p>
+            </div>
         </div>
     </div>
-    <!-- <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button> -->
-    <!-- <button class="SB" onclick="document.getElementById('Name').value = ''"><font size="+1" font color="">Send</font></button>
-    <button class="SB" onclick="document.getElementById('Phone').value = ''"><font size="+1" font color="">Send</font></button>
-    <button class="SB" onclick="document.getElementById('Email').value = ''"><font size="+1" font color="">Send</font></button> -->
+<div class="SBTN">
+    <button class="SB" onclick = "sendClicked()"><font size="+1" font color="">Send</font></button>
+</div>
+
 <footer>
     <div class="copyright">
         &copy; 2023 by Lucy's Diner. All Rights Reserved.
