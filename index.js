@@ -378,7 +378,7 @@ function generateReceipt() {
 
     if (name) {
         var namePara = document.createElement('p');
-        namePara.textContent = `Client: ${name}`;
+        namePara.textContent = `Name: ${name}`;
         detailsDiv.appendChild(namePara);
     }
 
