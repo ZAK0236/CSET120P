@@ -26,8 +26,8 @@ html{
     min-width:50%;
     z-index: 1;
     margin-left: 280px;
-    margin-top: 150px;
-    opacity: 0.3;
+    margin-top: 450px;
+    opacity: 0.4;
 }
 #bkgrd-text{
     color:lightgrey;
@@ -51,6 +51,7 @@ body {
     background-color: #fff;
     border: 1px solid #ddd;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding-bottom: 300px;
 }
 
 .receipt-container h2 {
@@ -86,14 +87,15 @@ body {
 
 .receipt-footer {
     background-color: #f1f1f1;
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
     color: #333;
     border-top: 1px solid #ddd;
+    width: 500px;
 }
 
 .receipt-footer p {
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .receipt-details {
@@ -149,7 +151,6 @@ table td:nth-child(4) {
     text-align: center;
 }
 
-
 footer {
     background-color: #9fcbd6;
     color: rgb(255, 255, 255);
@@ -160,6 +161,7 @@ footer {
     width: 100%;
     position: absolute;
     margin-top: 500px;
+    padding-top: 100px;
 }
 
 .social-media {
