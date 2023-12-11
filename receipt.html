@@ -22,6 +22,7 @@
 <br>
 <p id="bkgrd-text">Diner</p>
 </div>
+
     <div class="receipt-container">
         <header class="receipt-header">
             <img src="IMG/lucys_logo.png" alt="Lucy's" class="logo">
@@ -30,8 +31,13 @@
                 <p>8910 Diner St. Lancaster Pa, 17603</p>
                 <p>Phone: (717) 123-4567</p>
             </div>
+            <div class="DT">
+            <strong><p>Order Via: Online</p></strong>
+            </div>
+            <div class="DT2">
+            <strong><p id="DT"></p></strong>
+            </div>
         </header>
-
         <div class="receipt-body">
             <!-- Receipt info will be inserted here by JavaScript -->
         </div>
@@ -59,6 +65,12 @@
 <script src="index.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', generateReceipt);
+
+// get current date and time and put it into a string
+var date = new Date();
+var n = date.toDateString();
+var time = date.toLocaleTimeString();
+document.getElementById('DT').innerHTML = n + ' ' + time ;
 </script>
 </body>
 </html>
