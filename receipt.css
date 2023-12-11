@@ -110,6 +110,25 @@ body {
     color: #333;
 }
 
+.DT{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: -17px;
+    margin-top: 15px;
+}
+
+.DT2{
+    text-align: right;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* #DT{
+    font-size: 10px;
+} */
 .receipt-footer {
     background-color: #f1f1f1;
     padding: 5px;
