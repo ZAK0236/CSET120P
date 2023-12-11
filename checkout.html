@@ -129,7 +129,7 @@ input:checked + .slider:before {
             <p class="info" id=pickup-btn>Pickup  <input id="myRadio" type="radio" name="type" value="Pickup" required></p>
             <p class="info" id="delivery-btn">Delivery  <input id="myRadio" type="radio" name="type" value="Delivery" required></p>
         <br>
-        <p><strong>Add Tip: <input class="info" type="number" placeholder="Tip" name="tip" size="40" onkeypress="if(this.value.length==10) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" required></strong></p>
+        <p><strong>Add Tip: <input class="info" type="number" placeholder="Tip" name="tip" size="40" onkeypress="if(this.value.length==10) return false" required></strong></p>
         <br>
             <p><strong>Choose Payment Option:</strong></p>
 <div class="payment-switch">
@@ -147,13 +147,13 @@ input:checked + .slider:before {
                 <h4 class="title">Enter Credit Card Details</h4>
             </div>
             <div class="form-body">
-                <input type="number" class="card-number" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx" onkeypress="if(this.value.length==16) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
-                <input type="number" class="month" id="ccm" placeholder="Month" onkeypress="if(this.value.length==2) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>    
-                <input type="number" class="year" id="ccy" placeholder="Year" onkeypress="if(this.value.length==4) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+                <input type="number" class="card-number" id="ccn" placeholder="xxxx-xxxx-xxxx-xxxx" onkeypress="if(this.value.length==16) return false"/>
+                <input type="number" class="month" id="ccm" placeholder="Month" onkeypress="if(this.value.length==2) return false"/>    
+                <input type="number" class="year" id="ccy" placeholder="Year" onkeypress="if(this.value.length==4) return false"/>
 
                 <div class="card-verify">
                     <div class="cvv-input">
-                        <input type="number" id="ccv" placeholder="CVV" onkeypress="if(this.value.length==3) return false;return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57"/>
+                        <input type="number" id="ccv" placeholder="CVV" onkeypress="if(this.value.length==3) return false"/>
                     </div>
                     <div class="cvv-details">
                         <p>3 digits usually found <br> on the signature strip</p>
