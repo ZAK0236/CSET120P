@@ -126,9 +126,51 @@ body {
     color: #333;
 }
 
-/* #DT{
-    font-size: 10px;
-} */
+.Line1{
+  border: none;
+  height: 1px;
+  width: 88%;
+  color: #333;
+  background-color: #333; 
+  margin-top: 100px;
+}
+
+#Quantity{
+margin-left: 20px;
+position: absolute;
+}
+
+#totalTime{
+    border-style: none;
+    border: none;
+    outline: none;
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+#FirstL{
+    border-style: none;
+    border: none;
+    outline: none;  
+    margin-left: 15px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: -17px;
+    position: absolute;
+}
+
+#SecL{
+    border-style: none;
+    border: none;
+    outline: none;
+    margin-left: 175px;
+    font-size: 14px;
+    color: #333;
+    margin-top: -16.3px;
+    position: absolute;
+}
+
 .receipt-footer {
     background-color: #f1f1f1;
     padding: 5px;
@@ -136,7 +178,7 @@ body {
     color: #333;
     border-top: 1px solid #ddd;
     width: 398px;
-    margin-top: 180px;
+    margin-top: 10px;
 }
 
 .receipt-footer p {
