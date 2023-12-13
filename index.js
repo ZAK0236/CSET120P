@@ -456,7 +456,7 @@ function generateReceipt() {
     receiptDiv.appendChild(table);
 }}
 
-function addItem() {
+function addItemBreakfast() {
     const shopItems = document.querySelector("#breakfast");
     let newShopItemTitle = document.getElementById('shop-item-title').value;
     let newShopItemPrice = document.getElementById('shop-item-price').value;
@@ -471,6 +471,76 @@ function addItem() {
         <span class="shop-item-price">${newShopItemPrice}</span>
         <button class="btn1 btn-primary shop-item-button" type="button">ADD TO CART</button>
     </div>
+    <input type="checkbox" class="checkItems">
+</div>`;
+
+    shopItems.appendChild(newDiv)
+
+    clearInputs();
+}
+
+function addItemLunch() {
+    const shopItems = document.querySelector("#lunch");
+    let newShopItemTitle = document.getElementById('shop-item-title').value;
+    let newShopItemPrice = document.getElementById('shop-item-price').value;
+    let newShopItemImage = document.getElementById('shop-item-image').value;
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('shop-item');
+    newDiv.innerHTML = `    <div class="shop-item">
+    <span class="shop-item-title">${newShopItemTitle}</span>
+    <img class="shop-item-image" src="${newShopItemImage}" style="height: auto; object-fit: fill;">
+    <div class="shop-item-details">
+        <span class="shop-item-price">${newShopItemPrice}</span>
+        <button class="btn1 btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+    <input type="checkbox" class="checkItems">
+</div>`;
+
+    shopItems.appendChild(newDiv)
+
+    clearInputs();
+}
+
+function addItemDinner() {
+    const shopItems = document.querySelector("#dinner");
+    let newShopItemTitle = document.getElementById('shop-item-title').value;
+    let newShopItemPrice = document.getElementById('shop-item-price').value;
+    let newShopItemImage = document.getElementById('shop-item-image').value;
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('shop-item');
+    newDiv.innerHTML = `    <div class="shop-item">
+    <span class="shop-item-title">${newShopItemTitle}</span>
+    <img class="shop-item-image" src="${newShopItemImage}" style="height: auto; object-fit: fill;">
+    <div class="shop-item-details">
+        <span class="shop-item-price">${newShopItemPrice}</span>
+        <button class="btn1 btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+    <input type="checkbox" class="checkItems">
+</div>`;
+
+    shopItems.appendChild(newDiv)
+
+    clearInputs();
+}
+
+function addItemDrinks() {
+    const shopItems = document.querySelector("#drinks");
+    let newShopItemTitle = document.getElementById('shop-item-title').value;
+    let newShopItemPrice = document.getElementById('shop-item-price').value;
+    let newShopItemImage = document.getElementById('shop-item-image').value;
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('shop-item');
+    newDiv.innerHTML = `    <div class="shop-item">
+    <span class="shop-item-title">${newShopItemTitle}</span>
+    <img class="shop-item-image" src="${newShopItemImage}" style="height: auto; object-fit: fill;">
+    <div class="shop-item-details">
+        <span class="shop-item-price">${newShopItemPrice}</span>
+        <button class="btn1 btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+    <input type="checkbox" class="checkItems">
 </div>`;
 
     shopItems.appendChild(newDiv)
@@ -498,3 +568,28 @@ function removeItem(removeDiv) {
     let clearAll = document.querySelectorAll('input');
     clearAll.forEach(eachInput => eachInput.value = '');
   }
+
+//This function will get menu items fromt he local storage
+  function getMenuItems() {
+    const storedItems = localStorage.getItem('customerMenu');
+    return storedItems ? JSON.parse(storedItems) : { breakfast: [], lunch: [], dinner: [], drinks: [] };
+  }
+
+  function saveMenuItems(items) {
+    localStorage.setItem('customerMenu', JSON.stringify(items));
+
+  }
+
+  function addItemMenu(category, item) {
+    const menuItems = getMenuItems();
+    menuItems[category].push(item);
+    saveMenuItems(menuItems);
+  }
+
+  function removeItemsFromMenu(category, itemTitle) {
+    const menuItems = getMenuItems();
+    const updatedItems = menuItems[category].filter(item => item.title !== itemTitle)
+    menuItems[category] = updatedItems;
+    saveMenuItems(menuItems);
+  }
+

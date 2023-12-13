@@ -35,7 +35,13 @@
             <input type="text" id="shop-item-image">
         </div>
     </form>
-<button onclick="addItem()"> Add to Breakfast Menu</button>
+    <button class ="btn btn-dangerX remove-item-button" type="button" onclick="removal()">REMOVE SELECTED MENU ITEMS</button>
+    <br>
+<button onclick="addItemBreakfast()"> Add to Breakfast Menu</button>
+<button onclick="addItemLunch()"> Add to Lunch Menu</button>
+<button onclick="addItemDinner()"> Add to Dinner Menu</button>
+<button onclick="addItemDrinks()"> Add to Drinks Menu</button>
+<br><br>
 <h1>BREAKFAST</h1>
 <br><br>
 <div class="shop-items breakfast-items" id="breakfast">
@@ -45,8 +51,8 @@
         <div class="shop-item-details">
             <span class="shop-item-price">$2.99</span>
             <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
-            <button class ="btn btn-dangerX remove-item-button" type="button">REMOVE</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Pancakes</span>
@@ -55,6 +61,7 @@
             <span class="shop-item-price">$3.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">French Toast</span>
@@ -63,6 +70,7 @@
             <span class="shop-item-price">$3.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Eggs</span>
@@ -71,6 +79,7 @@
             <span class="shop-item-price">$2.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Home Fries</span>
@@ -79,6 +88,7 @@
             <span class="shop-item-price">$1.99</span>
             <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
 </div>
 <br><br>
@@ -92,6 +102,7 @@
             <span class="shop-item-price">$3.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Chicken Wrap</span>
@@ -100,6 +111,7 @@
             <span class="shop-item-price">$3.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Fries</span>
@@ -108,6 +120,7 @@
             <span class="shop-item-price">$2.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Italian Sub</span>
@@ -116,6 +129,7 @@
             <span class="shop-item-price">$4.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Cheese Steak</span>
@@ -124,6 +138,7 @@
             <span class="shop-item-price">$4.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
 </div>
 <br><br>
@@ -138,6 +153,7 @@
             <span class="shop-item-price">$4.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Steak</span>
@@ -146,6 +162,7 @@
             <span class="shop-item-price">$12.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Fettucine Alfredo</span>
@@ -154,6 +171,7 @@
             <span class="shop-item-price">$5.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Chicken Parm</span>
@@ -162,6 +180,7 @@
             <span class="shop-item-price">$8.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Salad</span>
@@ -170,6 +189,7 @@
             <span class="shop-item-price">$3.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
         
 </div>
@@ -185,6 +205,7 @@
             <span class="shop-item-price">$1.99</span>
             <button class="btn1 btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Coke</span>
@@ -193,6 +214,7 @@
             <span class="shop-item-price">$1.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Coffee</span>
@@ -201,6 +223,7 @@
             <span class="shop-item-price">$2.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Orange Juice</span>
@@ -209,6 +232,7 @@
             <span class="shop-item-price">$1.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>
     <div class="shop-item">
         <span class="shop-item-title">Iced Tea</span>
@@ -217,6 +241,7 @@
             <span class="shop-item-price">$2.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>  
     <div class="shop-item">
         <span class="shop-item-title">Water</span>
@@ -225,23 +250,24 @@
             <span class="shop-item-price">$0.99</span>
             <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
         </div>
+        <input type="checkbox" class="checkItems">
     </div>      
 </div>   
 <br><br>
 <hr>
-<button class="btn" type="button" onclick="newItem(0)">+</button>
-<div class="shop-item">
-    <span class="shop-item-title"><input type="text" id="title"></span>
-    <input type="text" id="img">
-    <div class="shop-item-details">
-        <span class="shop-item-price"><input type="text" id="price"></span>
-        <button class="btn btn-primary shop-item-button" type="button" onclick="addMenuItem(event)">ADD ITEM</button>
-    </div>
-</div>
-<br><br> 
 <footer>
-</div>
+    <div class="copyright">
+        &copy; 2023 by Lucy's Diner. All Rights Reserved.
+    </div>
+    
+    <div class="social-media">
+        <font size="+3" font color=""><ion-icon name="logo-twitter" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-instagram" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-facebook" class="social-logo"></ion-icon></font>
+        <font size="+3" font color=""><ion-icon name="logo-pinterest" class="social-logo"></ion-icon></font>
+    </div>
 </footer>
+</div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="index.js"></script>
 </body>
