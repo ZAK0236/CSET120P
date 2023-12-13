@@ -255,27 +255,27 @@ const ccmInput = document.querySelector('#ccm'); // Credit card month input
 const ccyInput = document.querySelector('#ccy'); // Credit card year input
 const ccvInput = document.querySelector('#ccv'); // CVV input
 
-cardBtn.addEventListener('change', () => {
-    if (cardBtn.checked) {
-        // If the checkbox is checked
-        paymentInput.value = 'CC'; // Set value to 'CC'
-        div.style.display = 'block';
-        conf.style.display = 'block';
-        ccnInput.required = true;
-        ccmInput.required = true;
-        ccyInput.required = true;
-        ccvInput.required = true;
-    } else {
-        // If the checkbox is unchecked
-        paymentInput.value = 'Cash'; // Set value to 'Cash'
-        div.style.display = 'none';
-        conf.style.display = 'block';
-        ccnInput.required = false;
-        ccmInput.required = false;
-        ccyInput.required = false;
-        ccvInput.required = false;
-    }
-});
+// cardBtn.addEventListener('change', () => {
+//     if (cardBtn.checked) {
+//         // If the checkbox is checked
+//         paymentInput.value = 'CC'; // Set value to 'CC'
+//         div.style.display = 'block';
+//         conf.style.display = 'block';
+//         ccnInput.required = true;
+//         ccmInput.required = true;
+//         ccyInput.required = true;
+//         ccvInput.required = true;
+//     } else {
+//         // If the checkbox is unchecked
+//         paymentInput.value = 'Cash'; // Set value to 'Cash'
+//         div.style.display = 'none';
+//         conf.style.display = 'block';
+//         ccnInput.required = false;
+//         ccmInput.required = false;
+//         ccyInput.required = false;
+//         ccvInput.required = false;
+//     }
+// });
 
 //Function for hidden inputs in checkout
 function appendHiddenInputs() {
@@ -455,3 +455,46 @@ function generateReceipt() {
     // Append table to the receipt body
     receiptDiv.appendChild(table);
 }}
+
+function addItem() {
+    const shopItems = document.querySelector("#breakfast");
+    let newShopItemTitle = document.getElementById('shop-item-title').value;
+    let newShopItemPrice = document.getElementById('shop-item-price').value;
+    let newShopItemImage = document.getElementById('shop-item-image').value;
+
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('shop-item');
+    newDiv.innerHTML = `    <div class="shop-item">
+    <span class="shop-item-title">${newShopItemTitle}</span>
+    <img class="shop-item-image" src="${newShopItemImage}" style="height: auto; object-fit: fill;">
+    <div class="shop-item-details">
+        <span class="shop-item-price">${newShopItemPrice}</span>
+        <button class="btn1 btn-primary shop-item-button" type="button">ADD TO CART</button>
+    </div>
+</div>`;
+
+    shopItems.appendChild(newDiv)
+
+    clearInputs();
+}
+
+//function to remove items from menu
+function removeItem(removeDiv) {
+    removeDiv.remove()
+  }
+
+  function removal(){
+    const checkItems = document.querySelectorAll('.checkItems')
+    checkItems.forEach(item => {
+
+        if (item.checked) {
+            var area = item.parentElement
+            removeItem(area)
+        }
+    })
+  }
+
+  function clearInputs (){
+    let clearAll = document.querySelectorAll('input');
+    clearAll.forEach(eachInput => eachInput.value = '');
+  }

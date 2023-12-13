@@ -21,15 +21,31 @@
 </div>
 <br><br>
 <hr>
+    <form action="">
+        <div>
+            <label for="">Name</label>
+            <input type="text" id="shop-item-title">
+        </div>
+        <div>
+            <label for="">PRICE</label>
+            <input type="text" id="shop-item-price">
+        </div>
+        <div>
+            <label for="">Image Address</label>
+            <input type="text" id="shop-item-image">
+        </div>
+    </form>
+<button onclick="addItem()"> Add to Breakfast Menu</button>
 <h1>BREAKFAST</h1>
 <br><br>
-<div class="shop-items breakfast-items">
+<div class="shop-items breakfast-items" id="breakfast">
     <div class="shop-item">
         <span class="shop-item-title">Bacon</span>
         <img class="shop-item-image" src="IMG/bacon.jpg">
         <div class="shop-item-details">
             <span class="shop-item-price">$2.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+            <button class ="btn btn-dangerX remove-item-button" type="button">REMOVE</button>
         </div>
     </div>
     <div class="shop-item">
@@ -61,14 +77,14 @@
         <img class="shop-item-image" src="IMG/homefries.jpg">
         <div class="shop-item-details">
             <span class="shop-item-price">$1.99</span>
-            <button class="btn btn-primary shop-item-button" type="button">REMOVE ITEM</button>
+            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
         </div>
     </div>
 </div>
 <br><br>
 <h1>LUNCH</h1>
 <br><br>
-<div class="shop-items lunch-items">
+<div class="shop-items lunch-items" id="lunch">
     <div class="shop-item">
         <span class="shop-item-title">Burger</span>
         <img class="shop-item-image" src="IMG/burger.jpg">
@@ -114,7 +130,7 @@
 <hr>
 <h1>DINNER</h1>
 <br><br>
-<div class="shop-items dinner-items">
+<div class="shop-items dinner-items" id="dinner">
     <div class="shop-item">
         <span class="shop-item-title">Lasagna</span>
         <img class="shop-item-image" src="IMG/lasagna.jpg">
@@ -161,7 +177,7 @@
 <hr>
 <h1>DRINKS</h1>
 <br><br>
-<div class="shop-items drink-items">
+<div class="shop-items drink-items" id="drinks">
     <div class="shop-item">
         <span class="shop-item-title">Milk</span>
         <img class="shop-item-image" src="IMG/milk.jpg" style="height: auto; object-fit: fill;">
