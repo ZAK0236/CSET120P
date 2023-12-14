@@ -20,11 +20,21 @@
     </nav>
 </div>
 <h1>CONTACT INFO</h1>
-
-
-<footer>
-</div>
-</footer>
+<br>
+<br>
+<br>
+<br>
+<div id="SHOW"></div> 
+<script> 
+if(typeof(Storage) !== "undefined") { 
+    localStorage.setItem("text"," ", "comment"); 
+    document.getElementById("SHOW").innerHTML =
+    localStorage.getItem("text"); 
+} else { 
+    document.getElementById("SHOW").innerHTML =  
+    "YOUR BROWSER DOES NOT SUPPORT LOCALSTORAGE"; 
+} 
+</script> 
 <script src="index.js"></script>
 </body>
 </html>

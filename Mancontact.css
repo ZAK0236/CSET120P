@@ -80,16 +80,9 @@ h1{
     margin: auto;
 }
 
-footer {
-    background-color: #9fcbd6;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
-    width: 100%;
-    position: absolute;
-    margin-top: 50px;
+#SHOW{
+    color: #0133b7;
+    font-size: 20px;
 }
 
 .social-media {
