@@ -25,7 +25,7 @@ h1{
     padding: 20px;
     color: black;
     text-transform: uppercase;
-    height: 210px;
+    height: 250px;
 }
 .contact-title{
     border-bottom: 2px solid rgb(81, 0, 209);
@@ -98,23 +98,37 @@ Input{
     border: 1px solid rgb(142, 138, 138);
     padding: 10px;
 }
-#Name{
-    margin-left: 5px;
-    margin-top: 2px;
-    height: 20px;
+label{
+    float: left;
+    margin-bottom: 20px;
+}
+label2{
+float: left;
+margin-top: 20px;
+}
+label3{
+    float: left;
+    margin-top: 80px;
+    margin-left: -380px;
+}
+.Name{
+    float: left;
+    margin-top: 0px;
+    height: 30px;
     position: absolute;
 }
-#Phone{
-    margin-left: 1px;
-    margin-top: 8px;
-    height: 30px;
-    margin-bottom: 10px;
+.Phone{
+    margin-left: -15px;
+    float: left;
+    margin-top: 25px;
+    height: 40px;
+    margin-bottom: 30px;
     width: 320px;
 }
-#Email{
-    margin-left: 5px;
-    margin-top: -3px;
-    height: 60px;
+.Email{
+    margin-left: -320px;
+    margin-top: 90px;
+    height: 40px;
     position: absolute;
 }
 .SBTN{
@@ -137,6 +151,10 @@ Input{
     color: white;
     cursor: pointer;
     border-style: none;
+}
+#output{
+    color: #0133b7;
+    font-size: 20px;
 }
 
 footer {
