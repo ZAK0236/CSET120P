@@ -35,7 +35,7 @@
             <input type="text" id="shop-item-image">
         </div>
     </form>
-    <button class ="btn btn-dangerX remove-item-button" type="button" onclick="removal()">REMOVE SELECTED MENU ITEMS</button>
+    <button class ="btn btn-dangerX remove-item-button" type="button" onclick="removal(this)">REMOVE SELECTED MENU ITEMS</button>
     <br>
 <button onclick="addItemBreakfast()"> Add to Breakfast Menu</button>
 <button onclick="addItemLunch()"> Add to Lunch Menu</button>
@@ -270,5 +270,8 @@
 </div>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script src="index.js"></script>
+<script>
+    loadMenuFromLocalStorage();
+</script>
 </body>
 </html>

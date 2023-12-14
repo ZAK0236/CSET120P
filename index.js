@@ -255,27 +255,27 @@ const ccmInput = document.querySelector('#ccm'); // Credit card month input
 const ccyInput = document.querySelector('#ccy'); // Credit card year input
 const ccvInput = document.querySelector('#ccv'); // CVV input
 
-// cardBtn.addEventListener('change', () => {
-//     if (cardBtn.checked) {
-//         // If the checkbox is checked
-//         paymentInput.value = 'CC'; // Set value to 'CC'
-//         div.style.display = 'block';
-//         conf.style.display = 'block';
-//         ccnInput.required = true;
-//         ccmInput.required = true;
-//         ccyInput.required = true;
-//         ccvInput.required = true;
-//     } else {
-//         // If the checkbox is unchecked
-//         paymentInput.value = 'Cash'; // Set value to 'Cash'
-//         div.style.display = 'none';
-//         conf.style.display = 'block';
-//         ccnInput.required = false;
-//         ccmInput.required = false;
-//         ccyInput.required = false;
-//         ccvInput.required = false;
-//     }
-// });
+cardBtn.addEventListener('change', () => {
+    if (cardBtn.checked) {
+        // If the checkbox is checked
+        paymentInput.value = 'CC'; // Set value to 'CC'
+        div.style.display = 'block';
+        conf.style.display = 'block';
+        ccnInput.required = true;
+        ccmInput.required = true;
+        ccyInput.required = true;
+        ccvInput.required = true;
+    } else {
+        // If the checkbox is unchecked
+        paymentInput.value = 'Cash'; // Set value to 'Cash'
+        div.style.display = 'none';
+        conf.style.display = 'block';
+        ccnInput.required = false;
+        ccmInput.required = false;
+        ccyInput.required = false;
+        ccvInput.required = false;
+    }
+});
 
 //Function for hidden inputs in checkout
 function appendHiddenInputs() {
@@ -549,47 +549,34 @@ function addItemDrinks() {
 }
 
 //function to remove items from menu
-function removeItem(removeDiv) {
-    removeDiv.remove()
-  }
+function removeItem(removeDiv, category) {
+    removeDiv.remove();
+    saveMenuToLocalStorage(category);
+}
 
-  function removal(){
-    const checkItems = document.querySelectorAll('.checkItems')
+function removal() {
+    const checkItems = document.querySelectorAll('.checkItems');
     checkItems.forEach(item => {
-
         if (item.checked) {
-            var area = item.parentElement
-            removeItem(area)
+            var shopItem = item.closest('.shop-item');
+            removeItem(shopItem);
         }
-    })
-  }
+    });
+}
 
   function clearInputs (){
     let clearAll = document.querySelectorAll('input');
     clearAll.forEach(eachInput => eachInput.value = '');
   }
 
-//This function will get menu items fromt he local storage
-  function getMenuItems() {
-    const storedItems = localStorage.getItem('customerMenu');
-    return storedItems ? JSON.parse(storedItems) : { breakfast: [], lunch: [], dinner: [], drinks: [] };
-  }
+function saveMenuToLocalStorage(category) {
+    const categoryDiv = document.getElementById(category);
+    localStorage.setItem('current-menu-' + category, categoryDiv.outerHTML);
+}
 
-  function saveMenuItems(items) {
-    localStorage.setItem('customerMenu', JSON.stringify(items));
-
-  }
-
-  function addItemMenu(category, item) {
-    const menuItems = getMenuItems();
-    menuItems[category].push(item);
-    saveMenuItems(menuItems);
-  }
-
-  function removeItemsFromMenu(category, itemTitle) {
-    const menuItems = getMenuItems();
-    const updatedItems = menuItems[category].filter(item => item.title !== itemTitle)
-    menuItems[category] = updatedItems;
-    saveMenuItems(menuItems);
-  }
-
+function loadMenuFromLocalStorage() {
+    var storedMenu = localStorage.getItem('current-menu');
+    if (storedMenu) {
+        document.getElementById('menus').innerHTML = storedMenu;
+    }
+}
